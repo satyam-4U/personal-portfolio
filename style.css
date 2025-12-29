@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  padding: 50px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.glass span {
+  color: #00ffd5;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.glow {
+  background: #00ffd5;
+  color: black;
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+.outline {
+  border: 2px solid #00ffd5;
+  color: #00ffd5;
+}
+
+section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.skill-box {
+  width: 60%;
+  margin: 15px auto;
+  text-align: left;
+}
+
+.progress {
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffd5, #00bfff);
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.12);
+  padding: 25px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ffd5;
+}
+
+.glass-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+}
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-info div {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #00ffd5;
+  text-decoration: none;
+}
+
